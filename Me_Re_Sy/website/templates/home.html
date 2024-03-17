@@ -1,0 +1,55 @@
+{% extends "base.html" %}{%block content%}
+<title> Symptoms</title>
+    {# Check if the user is authenticated #}
+    {% if user.is_authenticated  %}
+    
+    {# Display a welcome message #}
+    <h1>  Holi bb</h1>
+
+    <h6> Bienvenido de vuelta, {{user.username}}! </h6>
+    {# Botton to add new Pattient #}
+    <div class="text-end">
+    {% comment %} <a href="{% url "add_patient" %}" class="btn btn-primary">Add Patient</a> {% endcomment %}
+    {% comment %} <button type="button" class="btn btn-primary" href="{%url 'add_patient'%}" >New Pattient</button> {% endcomment %}
+    </div>
+
+    {% comment %} Predictions {% endcomment %}
+
+    <div class="container mt-4 my-4"> 
+
+      <form action "/predict" method ="POST">
+        <div class="form-group">
+          <label for="sympotms" class="form-label">Write the Symptoms right here:</label>
+          <input type="text" class="form-control" name="sympotms" placeholder="Use - instead of spaces">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Predict Disease</button>
+      </form>
+    
+    </div>
+    
+
+
+    
+    
+    {% else %} 
+    
+    <div class= "col-md-6 offest-md-3">
+    {# Display a login form if the user is not authenticated #}
+    <form method='POST' action="{%url 'home' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <form>
+            <div class="mb-3">
+              <label  class="form-label" >User Name</label>
+              <input  class="form-control"   name="username", placeholder= "User Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password", placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </form>
+  </div>
+    
+    {% endif %}{% endblock %}
