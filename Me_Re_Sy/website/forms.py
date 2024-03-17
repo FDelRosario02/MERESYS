@@ -55,3 +55,5 @@ class SignUpFrom(UserCreationForm):
         self.fields['password2'].label = ''  # Remove the label from the field
         self.fields['password2'].help_text = '<span class="form-text text-muted"><small>Enter the same password as before, for verification.</small></span>'  # Add help text to the field
 
+class PredictForm(forms.Form):
+    symptoms = forms.CharField(label='Write the Symptoms right here:', max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Use - instead of spaces'}))

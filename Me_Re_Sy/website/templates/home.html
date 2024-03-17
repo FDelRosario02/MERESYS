@@ -14,21 +14,35 @@
     </div>
 
     {% comment %} Predictions {% endcomment %}
-
     <div class="container mt-4 my-4"> 
+      <form action="/predict" method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+              <label for="symptoms" class="form-label">Write the Symptoms right here:</label>
+              <input type="text" class="form-control" name="symptoms" placeholder="Use - instead of spaces">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-success">Predict Disease</button>
+      </form>
+  </div>
+  
+    {% comment %} <div class="container mt-4 my-4"> 
 
-      <form action "/predict" method ="POST">
-        <div class="form-group">
-          <label for="sympotms" class="form-label">Write the Symptoms right here:</label>
-          <input type="text" class="form-control" name="sympotms" placeholder="Use - instead of spaces">
-        </div>
+      <form action= "/predict" method ="POST">
+      {% csrf_token %}
+      
+        <form>
+          <div class="form-group">
+            
+            <label for="sympotms" class="form-label">Write the Symptoms right here:</label>
+            <input type="text" class="form-control" name="sympotms" placeholder="Use - instead of spaces">
+          </div>
         <br>
         <button type="submit" class="btn btn-success">Predict Disease</button>
       </form>
     
-    </div>
-    
-
+    </div> {% endcomment %}
+    <p>{{predicted_disease}}</p>
 
     
     

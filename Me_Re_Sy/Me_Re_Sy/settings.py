@@ -15,6 +15,8 @@ from decouple import config
 
 # Build paths inside the project like this:
 
+# settings.py
+APPEND_SLASH = False
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
