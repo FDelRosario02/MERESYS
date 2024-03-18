@@ -106,13 +106,20 @@ def predict(request):
             user_symptoms = [s.strip() for s in symptoms.split(',')]
             user_symptoms = [symptom.strip("[]' ") for symptom in user_symptoms]
             predicted_disease = get_predicted_value(user_symptoms)
-            desc, pre, med, die, wrkout = helper(predicted_disease)
+            desc, pre, med, rec_diet, wrkout = helper(predicted_disease)
+
+            my_pre = []
+            for i in pre[0]:
+                my_pre.append(i)
+
+
             return render(request, 'home.html', {
                 'form': form,
                 'predicted_disease': predicted_disease,
                 'dis_des': desc,
-                'dis_pre': pre,
+                'dis_pre': my_pre,
                 'dis_med': med,
+                'dis_die': rec_diet,
                 'dis_wrkout': wrkout
             })
     else:

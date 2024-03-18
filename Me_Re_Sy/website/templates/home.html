@@ -4,7 +4,6 @@
     {% if user.is_authenticated  %}
     
     {# Display a welcome message #}
-    <h1>  Holi bb</h1>
 
     <h6> Bienvenido de vuelta, {{user.username}}! </h6>
     {# Botton to add new Pattient #}
@@ -42,8 +41,124 @@
       </form>
     
     </div> {% endcomment %}
-    <p>{{predicted_disease}}</p>
+    {% if predicted_disease %}
 
+    <h1 class="text-center mt-4">MERESYS Recom:</h1>
+    
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Predicted Disease</h5>
+          
+          <p class="card-text">{{ predicted_disease}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Disease Description</h5>
+          
+          <p class="card-text">{{ dis_des }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Disease Precaution</h5>
+          
+
+          <ul>
+            {% for i in dis_pre  %}
+            
+              <li >{{i}}</li>
+            
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Disease Medications</h5>
+          
+          <ul>
+            {% for i in dis_med  %}
+            
+              <li >{{i}}</li>
+            
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Recomended Workout</h5>
+          
+          <ul>
+            {% for i in dis_wrkout  %}
+            
+              <li >{{i}}</li>
+            
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Recommended Diet</h5>
+          
+          <ul>
+            {% for i in dis_die  %}
+            
+              <li >{{i}}</li>
+            
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %} <div class="container">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Predicted Disease</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">{{ predicted_disease }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Description Disease</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">{{ dis_des }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
+
+          
+          
+          
+    {% endif %}
+  
     
     
     {% else %} 
