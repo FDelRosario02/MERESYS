@@ -1,0 +1,206 @@
+,Disease,Diet
+0, Fungal infection                 , Antifungal Diet                
+1, Fungal infection                 , Probiotics                     
+2, Fungal infection                 , Garlic                         
+3, Fungal infection                 , Coconut oil                    
+4, Fungal infection                 , Turmeric                       
+5, Allergy                          , Elimination Diet               
+6, Allergy                          , Omega-3-rich foods             
+7, Allergy                          , Vitamin C-rich foods           
+8, Allergy                          , Quercetin-rich foods           
+9, Allergy                          , Probiotics                     
+10, GERD                             , Low-Acid Diet                  
+11, GERD                             , Fiber-rich foods               
+12, GERD                             , Ginger                         
+13, GERD                             , Licorice                       
+14, GERD                             , Aloe vera juice                
+15, Chronic cholestasis              , Low-Fat Diet                   
+16, Chronic cholestasis              , High-Fiber Diet                
+17, Chronic cholestasis              , Lean proteins                  
+18, Chronic cholestasis              , Whole grains                   
+19, Chronic cholestasis              , Fresh fruits and vegetables    
+20, Drug Reaction                    , Antihistamine Diet             
+21, Drug Reaction                    , Omega-3-rich foods             
+22, Drug Reaction                    , Vitamin C-rich foods           
+23, Drug Reaction                    , Quercetin-rich foods           
+24, Drug Reaction                    , Probiotics                     
+25, Peptic ulcer disease             , Low-Acid Diet                  
+26, Peptic ulcer disease             , Fiber-rich foods               
+27, Peptic ulcer disease             , Ginger                         
+28, Peptic ulcer disease             , Licorice                       
+29, Peptic ulcer disease             , Aloe vera juice                
+30, AIDS                             , Balanced Diet                  
+31, AIDS                             , Protein-rich foods             
+32, AIDS                             , Fruits and vegetables          
+33, AIDS                             , Whole grains                   
+34, AIDS                             , Healthy fats                   
+35, Diabetes                         , Low-Glycemic Diet              
+36, Diabetes                         , Fiber-rich foods               
+37, Diabetes                         , Lean proteins                  
+38, Diabetes                         , Healthy fats                   
+39, Diabetes                         , Low-fat dairy                  
+40, Gastroenteritis                  , Bland Diet                     
+41, Gastroenteritis                  , Bananas                        
+42, Gastroenteritis                  , Rice                           
+43, Gastroenteritis                  , Applesauce                     
+44, Gastroenteritis                  , Toast                          
+45, Bronchial Asthma                 , Anti-Inflammatory Diet         
+46, Bronchial Asthma                 , Omega-3-rich foods             
+47, Bronchial Asthma                 , Fruits and vegetables          
+48, Bronchial Asthma                 , Whole grains                   
+49, Bronchial Asthma                 , Lean proteins                  
+50, Hypertension                     , DASH Diet                      
+51, Hypertension                     , Low-sodium foods               
+52, Hypertension                     , Fruits and vegetables          
+53, Hypertension                     , Whole grains                   
+54, Hypertension                     , Lean proteins                  
+55, Migraine                         , Migraine Diet                  
+56, Migraine                         , Low-Tyramine Diet              
+57, Migraine                         , Caffeine withdrawal            
+58, Migraine                         , Hydration                      
+59, Migraine                         , Magnesium-rich foods           
+60, Cervical spondylosis             , Arthritis Diet                 
+61, Cervical spondylosis             , Anti-Inflammatory Diet         
+62, Cervical spondylosis             , Omega-3-rich foods             
+63, Cervical spondylosis             , Fruits and vegetables          
+64, Cervical spondylosis             , Whole grains                   
+65, Paralysis (brain hemorrhage)     , Heart-Healthy Diet             
+66, Paralysis (brain hemorrhage)     , Low-sodium foods               
+67, Paralysis (brain hemorrhage)     , Fruits and vegetables          
+68, Paralysis (brain hemorrhage)     , Whole grains                   
+69, Paralysis (brain hemorrhage)     , Lean proteins                  
+70, Jaundice                         , Liver-Healthy Diet             
+71, Jaundice                         , Low-fat Diet                   
+72, Jaundice                         , Fruits and vegetables          
+73, Jaundice                         , Whole grains                   
+74, Jaundice                         , Lean proteins                  
+75, Malaria                          , Malaria Diet                   
+76, Malaria                          , Hydration                      
+77, Malaria                          , High-Calorie Diet              
+78, Malaria                          , Soft and bland foods           
+79, Malaria                          , Oral rehydration solutions     
+80, Chicken pox                      , Chicken Pox Diet               
+81, Chicken pox                      , High-Calorie Diet              
+82, Chicken pox                      , Soft and bland foods           
+83, Chicken pox                      , Hydration                      
+84, Chicken pox                      , Protein-rich foods             
+85, Dengue                           , Dengue Diet                    
+86, Dengue                           , Hydration                      
+87, Dengue                           , High-Calorie Diet              
+88, Dengue                           , Soft and bland foods           
+89, Dengue                           , Protein-rich foods             
+90, Typhoid                          , Typhoid Diet                   
+91, Typhoid                          , High-Calorie Diet              
+92, Typhoid                          , Soft and bland foods           
+93, Typhoid                          , Hydration                      
+94, Typhoid                          , Protein-rich foods             
+95, Hepatitis A                      , Hepatitis A Diet               
+96, Hepatitis A                      , High-Calorie Diet              
+97, Hepatitis A                      , Soft and bland foods           
+98, Hepatitis A                      , Hydration                      
+99, Hepatitis A                      , Protein-rich foods             
+100, Hepatitis B                      , Hepatitis B Diet               
+101, Hepatitis B                      , High-Calorie Diet              
+102, Hepatitis B                      , Soft and bland foods           
+103, Hepatitis B                      , Hydration                      
+104, Hepatitis B                      , Protein-rich foods             
+105, Hepatitis C                      , Hepatitis C Diet               
+106, Hepatitis C                      , High-Calorie Diet              
+107, Hepatitis C                      , Soft and bland foods           
+108, Hepatitis C                      , Hydration                      
+109, Hepatitis C                      , Protein-rich foods             
+110, Hepatitis D                      , Hepatitis D Diet               
+111, Hepatitis D                      , High-Calorie Diet              
+112, Hepatitis D                      , Soft and bland foods           
+113, Hepatitis D                      , Hydration                      
+114, Hepatitis D                      , Protein-rich foods             
+115, Hepatitis E                      , Hepatitis E Diet               
+116, Hepatitis E                      , High-Calorie Diet              
+117, Hepatitis E                      , Soft and bland foods           
+118, Hepatitis E                      , Hydration                      
+119, Hepatitis E                      , Protein-rich foods             
+120, Alcoholic hepatitis              , Liver-Healthy Diet             
+121, Alcoholic hepatitis              , Low-fat Diet                   
+122, Alcoholic hepatitis              , Fruits and vegetables          
+123, Alcoholic hepatitis              , Whole grains                   
+124, Alcoholic hepatitis              , Lean proteins                  
+125, Tuberculosis                    , TB Diet                        
+126, Tuberculosis                    , High-Calorie Diet              
+127, Tuberculosis                    , Soft and bland foods           
+128, Tuberculosis                    , Hydration                      
+129, Tuberculosis                    , Protein-rich foods             
+130, Common Cold                     , Cold Diet                      
+131, Common Cold                     , Hydration                      
+132, Common Cold                     , Warm fluids                    
+133, Common Cold                     , Rest                           
+134, Common Cold                     , Honey and lemon tea            
+135, Pneumonia                       , Pneumonia Diet                 
+136, Pneumonia                       , High-Calorie Diet              
+137, Pneumonia                       , Soft and bland foods           
+138, Pneumonia                       , Hydration                      
+139, Pneumonia                       , Protein-rich foods             
+140, Dimorphic hemmorhoids(piles)    , Hemorrhoids Diet               
+141, Dimorphic hemmorhoids(piles)    , High-Fiber Diet                
+142, Dimorphic hemmorhoids(piles)    , Hydration                      
+143, Dimorphic hemmorhoids(piles)    , Warm baths                     
+144, Dimorphic hemmorhoids(piles)    , Stool softeners                
+145, Heart attack                    , Heart-Healthy Diet             
+146, Heart attack                    , Low-sodium foods               
+147, Heart attack                    , Fruits and vegetables          
+148, Heart attack                    , Whole grains                   
+149, Heart attack                    , Lean proteins                  
+150, Varicose veins                  , Varicose Veins Diet            
+151, Varicose veins                  , High-Fiber Diet                
+152, Varicose veins                  , Fruits and vegetables          
+153, Varicose veins                  , Whole grains                   
+154, Varicose veins                  , Low-sodium foods               
+155, Hypothyroidism                  , Hypothyroidism Diet            
+156, Hypothyroidism                  , Iodine-rich foods              
+157, Hypothyroidism                  , Selenium-rich foods            
+158, Hypothyroidism                  , Fruits and vegetables          
+159, Hypothyroidism                  , Whole grains                   
+160, Hyperthyroidism                 , Hyperthyroidism Diet           
+161, Hyperthyroidism                 , Low-Iodine Diet                
+162, Hyperthyroidism                 , Calcium-rich foods             
+163, Hyperthyroidism                 , Selenium-rich foods            
+164, Hyperthyroidism                 , Fruits and vegetables          
+165, Hypoglycemia                    , Hypoglycemia Diet              
+166, Hypoglycemia                    , Complex carbohydrates          
+167, Hypoglycemia                    , Protein-rich snacks            
+168, Hypoglycemia                    , Fiber-rich foods               
+169, Hypoglycemia                    , Healthy fats                   
+170, Osteoarthristis                 , Arthritis Diet                 
+171, Osteoarthristis                 , Anti-Inflammatory Diet         
+172, Osteoarthristis                 , Omega-3-rich foods             
+173, Osteoarthristis                 , Fruits and vegetables          
+174, Osteoarthristis                 , Whole grains                   
+175, Arthritis                       , Arthritis Diet                 
+176, Arthritis                       , Anti-Inflammatory Diet         
+177, Arthritis                       , Omega-3-rich foods             
+178, Arthritis                       , Fruits and vegetables          
+179, Arthritis                       , Whole grains                   
+180, (vertigo) Paroymsal Positional Vertigo , Vertigo Diet          
+181, (vertigo) Paroymsal Positional Vertigo , Low-Salt Diet         
+182, (vertigo) Paroymsal Positional Vertigo , Hydration             
+183, (vertigo) Paroymsal Positional Vertigo , Ginger tea            
+184, (vertigo) Paroymsal Positional Vertigo , Vitamin D-rich foods  
+185, Acne                            , Acne Diet                      
+186, Acne                            , Low-Glycemic Diet              
+187, Acne                            , Hydration                      
+188, Acne                            , Fruits and vegetables          
+189, Acne                            , Probiotics                     
+190, Urinary tract infection         , UTI Diet                       
+191, Urinary tract infection         , Hydration                      
+192, Urinary tract infection         , Cranberry juice                
+193, Urinary tract infection         , Probiotics                     
+194, Urinary tract infection         , Vitamin C-rich foods           
+195, Psoriasis                       , Psoriasis Diet                 
+196, Psoriasis                       , Anti-Inflammatory Diet         
+197, Psoriasis                       , Omega-3-rich foods             
+198, Psoriasis                       , Fruits and vegetables          
+199, Psoriasis                       , Whole grains                   
+200, Impetigo                        , Impetigo Diet                  
+201, Impetigo                        , Antibiotic treatment           
+202, Impetigo                        , Fruits and vegetables          
+203, Impetigo                        , Hydration                      
+204, Impetigo                        , Protein-rich foods             
