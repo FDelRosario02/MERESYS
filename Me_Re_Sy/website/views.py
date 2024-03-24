@@ -6,6 +6,8 @@ import numpy as np
 import pandas as pd
 import pickle
 from django import forms
+from .forms import Patient,AddPatientForm
+from .models import Patient
 
 #Load Database
 
@@ -65,6 +67,7 @@ def get_predicted_value(patient_symptoms):
 # Create your views here.
 
 def home(request):
+    patients= Patient.objects.all()
     
     if request.method == 'POST':
         username = request.POST['username']
@@ -79,7 +82,7 @@ def home(request):
             messages.success(request,'Incorrect password or username')
             return redirect('home')
     else:
-        return render(request, 'home.html',{})
+        return render(request, 'home.html',{'patients' : patients})
 
 # def login_user(request):
 #     pass
@@ -144,6 +147,59 @@ def predict(request):
         form = PredictForm()
     return render(request, 'home.html', {'form': form})
 
+
+def delete_patient(request, pk):
+    if request.user.is_authenticated:
+        record = Patient.objects.get(id=pk)
+        record.delete()
+        messages.error(request, f"Patient deleted!")
+        return redirect('home')
+    else:
+        messages.warning(request,"Please Log In to View Details")
+        messages.success(request,f"Deberías de Loggearte bb")
+        return redirect('home')
+    
+
+def update_patient(request, pk):
+    if request.user.is_authenticated:
+        current_patient = Patient.objects.get(id=pk)
+        form = AddPatientForm(request.POST or None, instance=current_patient) 
+        if form.is_valid():
+                form.save()
+                messages.success(request, f"{current_patient.first_name} has been updated.")
+                return redirect('home')
+        return render(request, 'update_patient.html',{'form':form})
+    else:
+        messages.info(request,'You must be logged in to do that action')
+        return redirect('home')
+    
+def patient_record(request, pk):
+    if request.user.is_authenticated:
+        #look up record
+        patient_record = Patient.objects.get(id=pk) 
+        return render(request, 'patient.html',{'patient_record' :patient_record})
+    else:
+        messages.warning(request,"Please Log In to View Details")
+        messages.success(request,f"Deberías de Loggearte bb")
+        return redirect('home')
+
+def add_patient(request):
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            form = AddPatientForm(request.POST)
+            if form.is_valid():
+                patient_record = form.save()
+                #return redirect('home', patient_id=patient_record.id)
+                return redirect('home')
+            return render(request, 'add_patient.html',{'form':form})    
+        else:
+            form = AddPatientForm()
+
+        return render(request, 'add_patient.html', {'form': form})
+    else:
+        # Manejo de la lógica si el usuario no está autenticado
+        messages.info(request, 'You must be logged in to do that action')
+        return redirect('home')
 # def predict(request):
 #     if request.method == 'POST':
 #             form = PredictForm(request.POST)

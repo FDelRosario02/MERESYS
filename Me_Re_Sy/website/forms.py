@@ -2,6 +2,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.contrib.auth.models import User
 from django import forms
+from .models import Patient
 
 
 
@@ -57,3 +58,58 @@ class SignUpFrom(UserCreationForm):
 
 class PredictForm(forms.Form):
     symptoms = forms.CharField(label='Write the Symptoms right here:', max_length=100, widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Use - instead of spaces'}))
+
+
+class AddPatientForm(forms.ModelForm):
+    first_name = forms.CharField(
+        required=True,
+        widget=forms.widgets.TextInput(attrs={"placeholder": "First Name", "class": "form-control"}),
+        label=""
+    )
+    last_name = forms.CharField(
+        required=True,
+        widget=forms.widgets.TextInput(attrs={"placeholder": "Last Name", "class": "form-control"}),
+        label=""
+    )
+    date_of_birth = forms.DateField(
+        required=True,
+        widget=forms.widgets.DateInput(attrs={"placeholder": "Date of Birth", "class": "form-control", "type": "date"}),
+        label=""
+    )
+    gender = forms.ChoiceField(
+        choices=[('M', 'Male'), ('F', 'Female'), ('O', 'Other')],
+        widget=forms.widgets.Select(attrs={"class": "form-control"}),
+        label=""
+    )
+    address = forms.CharField(
+        required=False,
+        widget=forms.widgets.TextInput(attrs={"placeholder": "Address", "class": "form-control"}),
+        label=""
+    )
+    phone = forms.CharField(
+        required=False,
+        widget=forms.widgets.TextInput(attrs={"placeholder": "Phone", "class": "form-control"}),
+        label=""
+    )
+    email = forms.EmailField(
+        required=False,
+        widget=forms.widgets.EmailInput(attrs={"placeholder": "Email", "class": "form-control"}),
+        label=""
+    )
+    blood_type = forms.ChoiceField(
+        required=True,
+        choices=[('A+','A+'), ('A-','A-'), ('B-','B-'), ('B+','B+'), ('AB-','AB-'), ('AB+','AB+'), ('O-','O-'), ('O+','O+')],
+        widget=forms.widgets.Select(attrs={"placeholder": "Blood Type", "class": "form-control"}),
+        label=""
+    )
+    allergies = forms.CharField(
+        required=False,
+        widget=forms.widgets.Textarea(attrs={"placeholder": "Allergies", "class": "form-control", "rows": 3}),
+        label=""
+    )
+
+    
+    class Meta:
+        model = Patient
+        fields = ['first_name', 'last_name', 'date_of_birth', 'gender', 'address', 'phone', 'email', 'blood_type', 'allergies', 'symptoms']
+

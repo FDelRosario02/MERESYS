@@ -24,5 +24,9 @@ urlpatterns = [
     path('logout/',views.logout_user, name='logout'),
     path('register/', views.register_user, name='register'),
     path('predict', views.predict, name ='predict'),
+    path('patient/<int:pk>', views.patient_record, name='patient'),
+    path('add_patient/', views.add_patient, name='add_patient'),
+    path('update_patient/<int:pk>', views.update_patient, name='update_patient'),
+    path('delete_patient/<int:pk>', views.delete_patient, name='delete_patient'),
     
 ]
